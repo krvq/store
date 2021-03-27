@@ -200,7 +200,6 @@ body {
             position: relative;
             margin-right: 26px;
 
-
             & summary {
                 outline: none;
                 cursor: pointer;
@@ -351,8 +350,7 @@ body {
         }
 
         &__button-account-dropdown {
-            width: 130px;
-            height: 38px;
+            position: relative;
             background-color: $pink;
             border: 1px solid #fff;
             font-size: 15px;
@@ -362,12 +360,76 @@ body {
             cursor: pointer;
             outline: none;
 
+            & summary {
+                padding: 13px 12px 11px 19px;
+                outline: none;
+                cursor: pointer;
+            }
+
+            & summary::-webkit-details-marker {
+                display: none;
+            }
+
+            &>summary {
+                list-style: none;
+            }
+
             &:hover {
                 background-color: #fff;
                 color: $pink;
                 border: 1px solid $pink;
             }
+
+            &__box {
+                z-index: 1;
+                position: absolute;
+                top: 50px;
+                left: -20px;
+                border-radius: 5px;
+                background-color: #fff;
+                padding: 21px 15px 10px 19px;
+                border: 1px solid #e8e8e8;
+
+                &::after {
+                    position: absolute;
+                    top: -5px;
+                    left: 130px;
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    transform: rotate(45deg);
+                    background-color: #fff;
+                    border-top: 1px solid #e8e8e8;
+                    border-left: 1px solid #e8e8e8;
+                }
+
+                & ul {
+                    list-style-type: none;
+                }
+
+            }
+
+            .account-dropdown-header {
+                padding-right: 80px;
+            }
+
+            &__logout {
+                @extend .top__basket__dropdown__box__button-checkout;
+                background-color: #fff;
+                color: $pink;
+                border: 1px solid $pink;
+                padding: 13px 15px;
+                margin: 10px auto;
+
+                &:hover {
+                    background-color: $pink;
+                    color: #fff;
+                }
+            }
         }
+
+
+
     }
 
 
@@ -682,7 +744,7 @@ body {
         &__card {
             display: block;
             text-decoration: none;
-            height: 364px;
+            padding-bottom: 21px;
 
 
             &:hover {

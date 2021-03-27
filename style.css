@@ -343,7 +343,7 @@ body {
   content: "$500.00";
 }
 
-.top__basket__dropdown__box__button-checkout {
+.top__basket__dropdown__box__button-checkout, .top__basket__button-account-dropdown__logout {
   background-color: #f16d7f;
   color: #fff;
   outline: none;
@@ -357,7 +357,7 @@ body {
   margin: 32px auto 0;
 }
 
-.top__basket__dropdown__box__button-checkout:hover {
+.top__basket__dropdown__box__button-checkout:hover, .top__basket__button-account-dropdown__logout:hover {
   background-color: #fff;
   color: #f16d7f;
 }
@@ -382,8 +382,7 @@ body {
 }
 
 .top__basket__button-account-dropdown {
-  width: 130px;
-  height: 38px;
+  position: relative;
   background-color: #f16d7f;
   border: 1px solid #fff;
   font-size: 15px;
@@ -394,10 +393,70 @@ body {
   outline: none;
 }
 
+.top__basket__button-account-dropdown summary {
+  padding: 13px 12px 11px 19px;
+  outline: none;
+  cursor: pointer;
+}
+
+.top__basket__button-account-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.top__basket__button-account-dropdown > summary {
+  list-style: none;
+}
+
 .top__basket__button-account-dropdown:hover {
   background-color: #fff;
   color: #f16d7f;
   border: 1px solid #f16d7f;
+}
+
+.top__basket__button-account-dropdown__box {
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 21px 15px 10px 19px;
+  border: 1px solid #e8e8e8;
+}
+
+.top__basket__button-account-dropdown__box::after {
+  position: absolute;
+  top: -5px;
+  left: 130px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #fff;
+  border-top: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+}
+
+.top__basket__button-account-dropdown__box ul {
+  list-style-type: none;
+}
+
+.top__basket__button-account-dropdown .account-dropdown-header {
+  padding-right: 80px;
+}
+
+.top__basket__button-account-dropdown__logout {
+  background-color: #fff;
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
+  padding: 13px 15px;
+  margin: 10px auto;
+}
+
+.top__basket__button-account-dropdown__logout:hover {
+  background-color: #f16d7f;
+  color: #fff;
 }
 
 .top__hr {
@@ -726,7 +785,7 @@ body {
 .offers__card-box__card {
   display: block;
   text-decoration: none;
-  height: 364px;
+  padding-bottom: 21px;
 }
 
 .offers__card-box__card:hover {
