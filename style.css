@@ -752,6 +752,10 @@ body {
   margin-top: 100px;
 }
 
+.offers__header {
+  margin-bottom: 20px;
+}
+
 .offers__header__head {
   font-size: 30px;
   font-weight: 700;
@@ -780,9 +784,22 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .offers__card-box__card {
+  margin: 40px 12px 0px 0px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.offers__card-box__card__item {
   display: block;
   text-decoration: none;
   padding-bottom: 21px;
@@ -792,6 +809,21 @@ body {
   -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
           box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
   background-color: #fff;
+}
+
+.offers__card-box__card__img {
+  display: block;
+}
+
+.offers__card-box__card:hover .offers__card-box__card__img {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.offers__card-box__card:hover .offers__card-box__card__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .offers__card-box__card:hover .offers__card-box__card__rating {
@@ -841,52 +873,30 @@ body {
   color: #898989;
 }
 
-.offers__card-box__card__effect {
-  background: #3a3838;
-  overflow: hidden;
-  position: relative;
-}
-
-.offers__card-box__card__effect__button {
+.offers__card-box__card__button {
   display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 98px;
-  left: 70px;
-  width: 123px;
-  height: 39px;
+  padding: 10px 13px;
+  text-decoration: none;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #fff;
   font-size: 13px;
   line-height: 1.2;
   font-weight: 700;
   color: #fff;
-  cursor: pointer;
-  outline: none;
 }
 
-.offers__card-box__card__effect__button img {
+.offers__card-box__card__button:hover {
+  -webkit-box-shadow: 0 0 10px;
+          box-shadow: 0 0 10px;
+}
+
+.offers__card-box__card__button img {
   margin-right: 8px;
-}
-
-.offers__card-box__card__effect:hover .offers__card-box__card__effect__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.offers__card-box__card__img {
-  display: block;
-  opacity: 1;
-}
-
-.offers__card-box__card__effect:hover .offers__card-box__card__img {
-  opacity: 0.17;
 }
 
 .offers-bottom {

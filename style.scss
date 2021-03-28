@@ -715,12 +715,15 @@ body {
     margin-top: 100px;
 
     &__header {
+        margin-bottom: 20px;
+
         &__head {
             font-size: 30px;
             font-weight: 700;
             letter-spacing: 0.025em;
             color: #222;
             text-align: center;
+
         }
 
         &__text {
@@ -740,16 +743,35 @@ body {
     &__card-box {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         &__card {
-            display: block;
-            text-decoration: none;
-            padding-bottom: 21px;
+            margin: 40px 12px 0px 0px;
+            position: relative;
+            display: flex;
+            justify-content: center;
 
+            &__item {
+                display: block;
+                text-decoration: none;
+                padding-bottom: 21px;
+            }
 
             &:hover {
                 box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
                 background-color: #fff;
+            }
+
+            &__img {
+                display: block;
+            }
+
+            &:hover &__img {
+                filter: brightness(40%);
+            }
+
+            &:hover &__button {
+                display: flex;
             }
 
             &:hover &__rating {
@@ -793,46 +815,27 @@ body {
                 }
             }
 
-            &__effect {
-                background: rgb(58, 56, 56);
-                overflow: hidden;
-                position: relative;
+            &__button {
+                display: none;
+                align-items: center;
+                position: absolute;
+                top: 98px;
+                padding: 10px 13px;
+                text-decoration: none;
+                background-color: rgba(255, 255, 255, 0.0);
+                border: 1px solid #fff;
+                font-size: 13px;
+                line-height: 1.2;
+                font-weight: 700;
+                color: #fff;
 
-                &__button {
-                    display: none;
-                    position: absolute;
-                    top: 98px;
-                    left: 70px;
-                    width: 123px;
-                    height: 39px;
-                    background-color: rgba(255, 255, 255, 0.0);
-                    border: 1px solid #fff;
-                    font-size: 13px;
-                    line-height: 1.2;
-                    font-weight: 700;
-                    color: #fff;
-                    cursor: pointer;
-                    outline: none;
-                }
-
-                &__button img {
-                    margin-right: 8px;
-                }
-
-                &:hover &__button {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                &:hover {
+                    box-shadow: 0 0 10px;
                 }
             }
 
-            &__img {
-                display: block;
-                opacity: 1;
-            }
-
-            &__effect:hover &__img {
-                opacity: 0.17;
+            &__button img {
+                margin-right: 8px;
             }
         }
     }
