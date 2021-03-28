@@ -907,16 +907,23 @@ body {
     }
 
     &__advantage {
-        width: 373px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
+        padding-top: 48px;
+        padding-right: 43px;
+        padding-bottom: 66px;
+        padding-left: 32px;
 
         &__card {
             display: flex;
             align-items: flex-start;
-            margin: 0px 43px 0 36px;
+            margin-top: 60px;
+
+            &:first-child {
+                margin-top: 0px;
+            }
         }
 
         &__card img {
@@ -933,7 +940,6 @@ body {
 
         &__text {
             font-size: 14px;
-            line-height: 24px;
             font-weight: 300;
             letter-spacing: 0.025em;
             color: #fbfbfb;
