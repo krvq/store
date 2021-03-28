@@ -1217,3 +1217,39 @@ body {
         }
     }
 }
+
+.banner-single-page {
+    background-color: #f8f3f4;
+    padding: 65px 0;
+
+    & .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header {
+        color: $pink;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.breadcrumbs {
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #636363;
+        font-weight: 300;
+
+        &:not(:last-of-type)::after {
+            content: " / ";
+        }
+
+        &:last-of-type {
+            color: $pink;
+        }
+    }
+}

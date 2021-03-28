@@ -1301,4 +1301,42 @@ body {
   color: #fff;
   background-color: #f16d7f;
 }
+
+.banner-single-page {
+  background-color: #f8f3f4;
+  padding: 65px 0;
+}
+
+.banner-single-page .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner-single-page__header {
+  color: #f16d7f;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #636363;
+  font-weight: 300;
+}
+
+.breadcrumbs__link:not(:last-of-type)::after {
+  content: " / ";
+}
+
+.breadcrumbs__link:last-of-type {
+  color: #f16d7f;
+}
 /*# sourceMappingURL=style.css.map */
