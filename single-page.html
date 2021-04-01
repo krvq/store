@@ -501,35 +501,42 @@
 
                         <form class="select-option">
                             <div class="select-option__flex">
-
                                 <div class="option">
                                     <p class="option__header">Choose color</p>
-                                    <select name="" id="">
-                                        <option value=""> <div class="option__color"></div>red
-                                        </option>
-                                        <option value="">test</option>
-                                        <option value="">test</option>
-                                    </select>
-                                </div>
-
-                                <div class="option">
-                                    <p class="option__header">Choose color</p>
-                                    <details>
+                    <!-- Реализовал через details, так как select особо не стилизуется и не получится делать ровно то же что в макете -->
+                                    <details class="option__choose">
                                         <summary>
-                                            <div class="option__color"></div>red
+                                            <a href="#!" class="option__choose__text text-first red">Red</a>
+                                            <i class="fas fa-chevron-down arrow-down"></i>
                                         </summary>
-                                            <div class="option__color"></div>red
+                                        <div class="option__choose__container">
+                                            <a href="#!" class="option__choose__text green">Green</a>
+                                            <a href="#!" class="option__choose__text black">Black</a>
+                                            <a href="#!" class="option__choose__text yellow">Yellow</a>
+                                            <a href="#!" class="option__choose__text blue">Blue</a>
+                                        </div>
                                     </details>
                                 </div>
 
                                 <div class="option">
-                                    <p class="option__header">Choose color</p>
-                                    <input list="test">
-                                    <datalist id="test">
-                                        <option>
-                                            <div class="option__color"></div>red
-                                        </option>
-                                        </datalist>
+                                    <p class="option__header">Choose size</p>
+                                    <details class="option__choose">
+                                        <summary>
+                                            <a href="#!" class="option__choose__text text-first none-color">XXL</a>
+                                            <i class="fas fa-chevron-down arrow-down"></i>
+                                        </summary>
+                                        <div class="option__choose__container">
+                                            <a href="#!" class="option__choose__text none-color">XL</a>
+                                            <a href="#!" class="option__choose__text none-color">L</a>
+                                            <a href="#!" class="option__choose__text none-color">M</a>
+                                            <a href="#!" class="option__choose__text none-color">S</a>
+                                        </div>
+                                    </details>
+                                </div>
+
+                                <div class="option">
+                                    <p class="option__header">Quantity</p>
+                                    <input class="option__choose-numbers" type="number" max="10" min="1" placeholder="1" name="" id="">
                                 </div>
                         </div>
 
