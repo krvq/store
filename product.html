@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/95a651c91a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
-    <title>Single page</title>
+    <title>Store</title>
     <link rel="stylesheet" href="style.scss">
 </head>
 
@@ -459,171 +459,17 @@
             </header>
 
             <main>
-               <figure class="product">
-                <div class="product__card">
-                    <a href="#!" class="product__card__arrow"><i class="fas fa-chevron-left"></i></a>
-                    <img src="img/single-page/product-img.jpg" alt="product image" class="product__img">
-                    <a href="#!" class="product__card__arrow"><i class="fas fa-chevron-right"></i></a>
-                </div>
-                <div class="container">
-                    <div class="product__info">
-                        <div class="product__info__description">
-                            <p class="product__info__name">Women collecton</p>
-                            <h4 class="product__info__header">Moschino cheap and chic</h4>
-                            <!-- TODO рейтинг по ховеру -->
-                            <div class="product__info__rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <p class="product__info__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+                
 
-                            <div class="product__info__spec">
-                                <p class="product__info__spec__text">Material: <span class="product__info__spec__text__color">cotton</span></p>
-                                <p class="product__info__spec__text">designer: <span class="product__info__spec__text__color">binburhan</span></p>
-                            </div>
 
-                            <p class="product__info__price">$561</p>
-                         
-                        </div>
 
-                        <form class="select-option">
-                            <div class="select-option__flex">
-                                <div class="option">
-                                    <p class="option__header">Choose color</p>
-                    <!-- Реализовал через details, так как select особо не стилизуется и не получится делать ровно то же что в макете -->
-                                    <details class="option__choose">
-                                        <summary>
-                                            <a href="#!" class="option__choose__text text-first red">Red</a>
-                                            <i class="fas fa-chevron-down arrow-down"></i>
-                                        </summary>
-                                        <div class="option__choose__container">
-                                            <a href="#!" class="option__choose__text green">Green</a>
-                                            <a href="#!" class="option__choose__text black">Black</a>
-                                            <a href="#!" class="option__choose__text yellow">Yellow</a>
-                                            <a href="#!" class="option__choose__text blue">Blue</a>
-                                        </div>
-                                    </details>
-                                </div>
 
-                                <div class="option">
-                                    <p class="option__header">Choose size</p>
-                                    <details class="option__choose">
-                                        <summary>
-                                            <a href="#!" class="option__choose__text text-first none-color">XXL</a>
-                                            <i class="fas fa-chevron-down arrow-down"></i>
-                                        </summary>
-                                        <div class="option__choose__container">
-                                            <a href="#!" class="option__choose__text none-color">XL</a>
-                                            <a href="#!" class="option__choose__text none-color">L</a>
-                                            <a href="#!" class="option__choose__text none-color">M</a>
-                                            <a href="#!" class="option__choose__text none-color">S</a>
-                                        </div>
-                                    </details>
-                                </div>
-
-                                <div class="option">
-                                    <p class="option__header">Quantity</p>
-                                    <input class="option__choose-numbers" type="number" max="10" min="1" placeholder="1" name="" id="">
-                                </div>
-                        </div>
-
-    <!-- сделал иконку через font awesome, так как в макете представлено изображение, при hover проблематичнее изменить цвет изображения-->
-                            <button class="option__submit"><i class="fas fa-shopping-cart"></i>Add to cart</button>
-
-                        </form>
-                    </div>
-                </div>
-               </figure>
-               
-               <h3 class="offers-header-single-page">You may like also</h3>
-               <div class="container">
-               <div class="offers__card-box">
-                    <div class="offers__card-box__card">
-                        <a href="#!" class="offers__card-box__card__item">
-                            <img class="offers__card-box__card__img" src="img/item-tshirt.jpg" alt="t-shirt men">
-                            <p class="offers__card-box__card__description">Mango People T-shirt</p>
-                            <div class="offers__card-box__card__price-rating">
-                                <p class="offers__card-box__card__price">$52.00</p>
-                                <div class="offers__card-box__card__rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#!" class="offers__card-box__card__button">
-                            <img src="img/basket-cart.svg" alt="basket"> Add to Cart
-                        </a>
-                    </div>
-                    <div class="offers__card-box__card">
-                        <a href="#!" class="offers__card-box__card__item">
-                            <img class="offers__card-box__card__img" src="img/item-tshirt-women.jpg" alt="t-shirt women">
-                            <p class="offers__card-box__card__description">Mango People T-shirt</p>
-                            <div class="offers__card-box__card__price-rating">
-                                <p class="offers__card-box__card__price">$52.00</p>
-                                <div class="offers__card-box__card__rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#!" class="offers__card-box__card__button">
-                            <img src="img/basket-cart.svg" alt="basket"> Add to Cart
-                        </a>
-                    </div>
-                    <div class="offers__card-box__card">
-                        <a href="#!" class="offers__card-box__card__item">
-                            <img class="offers__card-box__card__img" src="img/item-jacket.jpg" alt="jacket">
-                            <p class="offers__card-box__card__description">Mango People T-shirt</p>
-                            <div class="offers__card-box__card__price-rating">
-                                <p class="offers__card-box__card__price">$52.00</p>
-                                <div class="offers__card-box__card__rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#!" class="offers__card-box__card__button">
-                            <img src="img/basket-cart.svg" alt="basket"> Add to Cart
-                        </a>
-                    </div>
-                    <div class="offers__card-box__card">
-                        <a href="#!" class="offers__card-box__card__item">
-                            <img class="offers__card-box__card__img" src="img/item-dress.jpg" alt="dress">
-                            <p class="offers__card-box__card__description">Mango People T-shirt</p>
-                            <div class="offers__card-box__card__price-rating">
-                                <p class="offers__card-box__card__price">$52.00</p>
-                                <div class="offers__card-box__card__rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#!" class="offers__card-box__card__button">
-                            <img src="img/basket-cart.svg" alt="basket"> Add to Cart
-                        </a>
-                    </div>
-                </div>
-            </div>
             </main>
+
         </div>
 
         <footer>
-            <div class="footer-top footer-margin-single-page">
+            <div class="footer-top">
                 <div class="container">
                     <div class="footer-top__left">
                         <figure class="footer-top__carousel">
@@ -732,6 +578,7 @@
                     </div>
                 </div>
             </div>
+            
         </footer>
     </div>
 </body>
