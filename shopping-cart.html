@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/95a651c91a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
-    <title>Single page</title>
+    <title>shopping cart</title>
     <link rel="stylesheet" href="style.scss">
 </head>
 
@@ -461,19 +461,150 @@
             <main>
                 <div class="container">
 
-                    <div class="cart-table">
+            <div class="cart-table">
+                        <div class="table-top">
+                            <p class="table-header table-top__table-header">Product Details</p>
+                            <p class="table-header">Unit Price</p>
+                            <p class="table-header">Quantity</p>
+                            <p class="table-header">Shipping</p>
+                            <p class="table-header">Subtotal</p>
+                            <p class="table-header">Action</p>
+                        </div>
+                        <form action="#!">
+                        <div class="table-product">
+                            <div class="table-product-card">
+                                <div class="table-product-card-info">
+                                    <a href="single-page.html"><img src="img/shopping cart/cart-product-1.jpg" alt="product"></a>
+                                    <div class="table-product-card-info__description">
+                                        <a href="single-page.html" class="table-header table-product-card-info__description__table-header">
+                                            Mango People T-Shirt
+                                        </a>
+                                        <div class="product__info__rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p class="table-product-card-text">Color: <span>Red</span></p>
+                                        <p class="table-product-card-text">Size: <span>XII</span></p>
+                                    </div>
+                                </div>
+                                <p class="table-text">$150</p>
+                                <input class="table-quantity table-text" type="number" name="quantity" min="1" max="10" placeholder="1">
+                                <p class="table-text">FREE</p>
+                                <p class="table-text">$300</p>
+                                <i class="fas fa-times-circle color-icon table-product-card__fas"></i>
+                            </div>
+                            <div class="table-product-card">
+                                <div class="table-product-card-info">
+                                    <a href="single-page.html"><img src="img/shopping cart/cart-product-2.jpg" alt="product"></a>
+                                    <div class="table-product-card-info__description">
+                                        <a href="single-page.html" class="table-header table-product-card-info__description__table-header">
+                                            Mango People T-Shirt
+                                        </a>
+                                        <div class="product__info__rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p class="table-product-card-text">Color: <span>Red</span></p>
+                                        <p class="table-product-card-text">Size: <span>XII</span></p>
+                                    </div>
+                                </div>
+                                <p class="table-text">$150</p>
+                                <input class="table-quantity table-text" type="number" name="quantity" min="1" max="10" placeholder="1">
+                                <p class="table-text">Shipping</p>
+                                <p class="table-text">$300</p>
+                                <i class="fas fa-times-circle color-icon table-product-card__fas"></i>
+                            </div>
+                            <div class="table-product-card">
+                                <div class="table-product-card-info">
+                                    <a href="single-page.html"><img src="img/shopping cart/cart-product-3.jpg" alt="product"></a>
+                                    <div class="table-product-card-info__description">
+                                        <a href="single-page.html" class="table-header table-product-card-info__description__table-header">
+                                            Mango People T-Shirt
+                                        </a>
+                                        <div class="product__info__rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p class="table-product-card-text">Color: <span>Red</span></p>
+                                        <p class="table-product-card-text">Size: <span>XII</span></p>
+                                    </div>
+                                </div>
+                                <p class="table-text">$150</p>
+                                <input class="table-quantity table-text" type="number" name="quantity" min="1" max="10" placeholder="1">
+                                <p class="table-text">Shipping</p>
+                                <p class="table-text">$300</p>
+                                <i class="fas fa-times-circle color-icon table-product-card__fas"></i>
+                            </div>
+                        </div>
+
+                        <div class="flex-box-button">
+                            <input class="table-button" type="reset" value="Clear Shopping Cart">
+                            <a href="product.html" class="table-button">Continue Shopping</a>
+                        </div>
+                        </form>
 
 
-                        
+                        <div class="table-data">
+                            <form class="data-shipping">
+                                <p class="table-data-header">
+                                    Shipping address
+                                </p>
+
+                                <input class="input-data" type="search" list="country" placeholder="Bangladesh" pattern="^[a-zA-Z\s]+$" required>
+                                <datalist id="country">
+                                    <option value="Bangladesh"></option>
+                                    <option value="Russia"></option>
+                                    <option value="USA"></option>
+                                    <option value="France"></option>
+                                    <option value="Germany"></option>
+                                    <option value="Ukraine"></option>
+                                    <option value="Belarus"></option>
+                                </datalist>
+
+                                <input class="input-data" type="search" list="state" placeholder="State" pattern="^[a-zA-Z\s]+$" required>
+                                <datalist id="state">
+                                    <option value="State one"></option>
+                                    <option value="State two"></option>
+                                    <option value="State three"></option>
+                                    <option value="State four"></option>
+                                    <option value="State five"></option>
+                                    <option value="State six"></option>
+                                    <option value="State seven"></option>
+                                </datalist>
+
+                                <input class="input-data input-data__number" type="number" name="postcode" placeholder="Postcode / ZIP" pattern="[0-9]{6}" required>
+
+                                <button class="data-button">Get a quote</button>
+                            </form>
+
+                            <form class="data-coupon">
+                                <p class="table-data-header">
+                                    Coupon discount
+                                </p>
+                                <p class="data-text">Enter your coupon code if you have one</p>
+                                <input class="input-data input-data__number" type="number" name="postcode" placeholder="Coupon" required>
+                                <button class="data-button">Apply coupon</button>
+                            </form>
+
+                            <div class="data-total">
+                                <p class="total-text">Sub total</p>
+                                <p class="table-data-header data-total__table-data-header">
+                                    Grand total
+                                </p>
+                                <a href="checkout.html" class="total-button">Proceed to checkout</a>
+
+                            </div>
+                        </div>
                     </div>
-
-
-
-
-
-
-
-
                 </div>
             </main>
         </div>
