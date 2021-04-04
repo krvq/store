@@ -324,7 +324,6 @@ body {
                     &:hover {
                         background-color: #fff;
                         color: $pink;
-                        // border: 1px solid $pink;
                     }
                 }
 
@@ -359,6 +358,7 @@ body {
             color: #fff;
             cursor: pointer;
             outline: none;
+            transition: all 1s;
 
             & summary {
                 padding: 13px 12px 11px 19px;
@@ -420,6 +420,7 @@ body {
                 border: 1px solid $pink;
                 padding: 13px 15px;
                 margin: 10px auto;
+                transition: all 1s;
 
                 &:hover {
                     background-color: $pink;
@@ -431,8 +432,6 @@ body {
 
 
     }
-
-
 
     &__hr {
         border: none;
@@ -506,10 +505,9 @@ body {
     }
 }
 
-
-
 .mega-menu {
     position: absolute;
+    z-index: 2;
     display: none;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
     border: 1px solid #e9e9e9;
@@ -561,7 +559,6 @@ body {
             &__link {
                 text-decoration: none;
                 color: #232323;
-                display: block;
 
                 &:hover {
                     color: $pink;
@@ -579,6 +576,7 @@ body {
                 line-height: 28px;
                 letter-spacing: 0.35px;
                 text-decoration: none;
+                display: block;
 
                 &:hover {
                     color: $pink;
@@ -828,6 +826,7 @@ body {
                 line-height: 1.2;
                 font-weight: 700;
                 color: #fff;
+                transition: all .5s;
 
                 &:hover {
                     box-shadow: 0 0 10px;
@@ -1156,6 +1155,7 @@ body {
         & a {
             color: #898989;
             text-decoration: none;
+            display: block;
 
             &:hover {
                 color: $pink;
@@ -1206,6 +1206,7 @@ body {
             font-weight: 400;
             line-height: 42px;
             letter-spacing: 0.4px;
+            transition: all 1s;
 
             &:last-child {
                 margin-right: 0;
@@ -1244,12 +1245,17 @@ body {
         text-transform: uppercase;
         color: #636363;
         font-weight: 300;
+        transition: color 1s;
 
         &:not(:last-of-type)::after {
             content: " / ";
         }
 
         &:last-of-type {
+            color: $pink;
+        }
+
+        &:hover {
             color: $pink;
         }
     }
@@ -1600,8 +1606,8 @@ body {
     margin-top: 60px;
 }
 
-aside {
-    margin-right: 40px;
+.side-nav-product {
+    margin-right: 50px;
 }
 
 .side-nav-box {
@@ -1681,4 +1687,329 @@ aside {
             color: $pink;
         }
     }
+}
+
+.options-product {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.options-product-header {
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+}
+
+.list-element {
+    display: flex;
+    align-items: center;
+
+    &__list:not(:last-of-type):after {
+        content: "|";
+        color: #dfdfdf;
+        margin: 0 5px;
+    }
+
+    &__size {
+        margin-right: 23px;
+
+        & input[type="checkbox"] {
+            cursor: pointer;
+        }
+    }
+}
+
+.list-text {
+    text-decoration: none;
+    display: flex;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+
+    &_color:hover {
+        color: $pink;
+    }
+
+    &__size {
+        margin-left: 9px;
+    }
+}
+
+.meter {
+    position: relative;
+    width: 262px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+}
+
+.meter-value {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 23px;
+    width: 124px;
+    height: 6px;
+    background-color: $pink;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 14px;
+        height: 14px;
+        background-color: $pink;
+        border-radius: 10px;
+        left: -1px;
+    }
+
+    &::after {
+        position: absolute;
+        right: -1px;
+        content: "";
+        width: 14px;
+        height: 14px;
+        background-color: $pink;
+        border-radius: 10px;
+    }
+}
+
+.flex-box-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.sort-product-box {
+    display: flex;
+    align-items: center;
+    width: 846px;
+    height: 50px;
+    background-color: #f3f3f3;
+    margin-top: 40px;
+}
+
+.sort-product {
+    display: flex;
+    height: 30px;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    margin-left: 9px;
+}
+
+.sort-type {
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    border-right: 1px solid #ebebeb;
+    height: 31px;
+    width: 65px;
+    text-align: center;
+    cursor: default;
+}
+
+.sort {
+    position: relative;
+}
+
+.sort-show {
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 11px;
+    cursor: pointer;
+    outline: none;
+
+    .sort[open] & {
+        color: $pink;
+    }
+
+    .sort[open] &::after {
+        color: $pink;
+    }
+
+    &::after {
+        content: "\f0d7";
+        font-family: "Font Awesome 5 Free";
+        color: #6f6e6e;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        margin-left: 21px;
+        padding-right: 9px;
+    }
+}
+
+.sort-list {
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    border: 1px solid #ebebeb;
+    border-bottom: none;
+    background-color: #fff;
+    list-style-type: none;
+    z-index: 2;
+}
+
+.sort-show-link {
+    text-decoration: none;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    display: block;
+    padding-right: 20px;
+    padding-left: 11px;
+    border-bottom: 1px solid #ebebeb;
+
+
+    &:hover {
+        color: $pink;
+    }
+}
+
+.sort-show-link__show {
+    padding-right: 38px;
+}
+
+.card-box__button-product {
+    top: 150px;
+    left: 66px;
+    width: 57px;
+    height: 38px;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    padding: 0;
+    justify-content: center;
+
+    & img {
+        margin: 0;
+    }
+}
+
+.card-box__button-product_position {
+    left: 135px;
+}
+
+.card-box__button_border {
+    border-radius: 3px;
+}
+
+.page-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.pages {
+    padding: 8px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+}
+
+.page-link {
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0 6px;
+
+    &:hover {
+        color: $pink;
+    }
+}
+
+.view-all-button {
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    height: 44px;
+    border-radius: 3px;
+    border: 1px solid $pink;
+    background-color: #fff;
+    color: $pink;
+    font-size: 14px;
+    line-height: 26px;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: $pink;
+        color: #fff;
+    }
+}
+
+.banner-bottom__product {
+    margin-top: 110px;
+    background-color: #222224;
+    padding: 0;
+}
+
+.flex-box-banner-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-card__product {
+    padding: 0;
+    margin-top: 90px;
+    margin-bottom: 110px;
+
+    &:first-child {
+        // пришлось сделать так как, ранее был использован псевдоэлемент и приоритет выше у него
+        margin-top: 90px;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & img {
+            margin: 0 0 22px;
+        }
+    }
+
+    &__text {
+        text-align: center;
+    }
+}
+
+.footer-top__product {
+    margin: 0;
+}
+
+.man {
+    position: relative;
+}
+
+.man:before {
+    position: absolute;
+    top: 60px;
+    right: -20px;
+    content: "";
+    background-color: $pink;
+    width: 75px;
+    height: 3px;
+    color: $pink;
 }
