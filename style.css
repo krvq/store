@@ -1072,6 +1072,13 @@ body {
   height: 83px;
   border-radius: 83px;
   margin-right: 28px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.footer-top__carousel img:active {
+  -webkit-transform: translateX(300px) rotate(360deg) scale(2) translateY(90px);
+          transform: translateX(300px) rotate(360deg) scale(2) translateY(90px);
 }
 
 .footer-top__carousel__content__switch {
