@@ -5,12 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="adp-style.css">
   <script src="https://kit.fontawesome.com/95a651c91a.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  <title>Store</title>
-  <link rel="stylesheet" href="adp-style.css">
+  <title>Store adaptive</title>
 </head>
 
 <body>
@@ -18,23 +17,206 @@
 <div class="wrapper">
   <div class="wrapper__content">
     <header>
+      <div class="block-full-page__top block-full-page__top_bgc">
+        <div class="container">
+          <div class="flex-box">
+            <div class="flex-box">
+              <a class="img-link img-link__top" href="adp-index.html"><img src="img/adp-index/logo.svg" alt="logo"></a>
+<!--TODO должно быть меню, а не просто ссылка-->
+              <a class="img-link" href="#"><img src="img/adp-index/search-icon.svg" alt="search-icon"></a>
+            </div>
+            <div class="flex-box">
+<!--TODO у всех details надо сделать меню как на сайте магазина-->
+              <details class="drop-down drop-down__top">
+                <summary class="drop-down-head">
+                  <img src="img/adp-index/drop-down-icon.svg" alt="drop-down" class="img-block">
+                </summary>
+                <div class="drop-down-content">
+                  <h1>test</h1>
+                </div>
+              </details>
 
-      <h1 class="container">hi</h1>
+              <details class="drop-down drop-down__top">
+              <summary class="drop-down-head">
+                <img src="img/adp-index/account-icon.svg" alt="drop-down" class="img-block">
+              </summary>
+              <div class="drop-down-content">
+                <h1>test</h1>
+              </div>
+              </details>
 
+              <details class="drop-down">
+              <summary class="drop-down-head">
+                <img src="img/adp-index/shopping-cart-icon.svg" alt="drop-down" class="img-block">
+              </summary>
+              <div class="drop-down-content">
+                <h1>test</h1>
+              </div>
+              </details>
 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block-full-page block-full-page__top-banner_bgc">
+        <div class="container">
+          <div class="flex-box">
+              <img src="img/adp-index/img-top-banner.png" alt="banner" class="img-block img-block__top-banner">
+              <div class="lettering lettering__top-banner">
+                <p class="lettering-header">
+                    The Brand<br><span class="lettering-text lettering-text__top-banner">of luxerious</span>
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
+    <div class="container">
+        <div class="flex-box flex-box__offer">
+            <div class="offer-card">
+                <a href="product.html" class="img-link"><img class="offer-card-img" src="img/adp-index/offer-woman.jpg" alt="offer-woman"></a>
+                <p class="offer-card-text">30% off<br><span class="offer-card-text_effect">for women</span></p>
+            </div>
+            <div class="offer-card offer-card__index_margin-center">
+                <a href="product.html" class="img-link"><img class="offer-card-img" src="img/adp-index/offer-man.jpg" alt="offer-woman"></a>
+                <p class="offer-card-text">Hot Deal<br><span class="offer-card-text_effect">for men</span></p>
+            </div>
+            <div class="offer-card">
+                <a href="product.html" class="img-link"><img class="offer-card-img" src="img/adp-index/offer-kids.jpg" alt="offer-woman"></a>
+                <p class="offer-card-text">New arrivals<br><span class="offer-card-text_effect">for kids</span></p>
+            </div>
+        </div>
+        <div class="offer-card offer-card__index_margin-bot">
+            <a href="product.html" class="img-link"><img class="offer-card-img" src="img/adp-index/offer-accesories.jpg" alt="offer-woman"></a>
+            <p class="offer-card-text">Luxirous & trendy<br><span class="offer-card-text_effect">accesories</span></p>
+        </div>
 
+        <h4 class="header">Featured Items</h4>
+        <p class="sub-text">Shop for items based on what we featured in this week</p>
 
+        <div class="flex-box flex-box_card">
+            <div class="item-card">
+                <a href="single-page.html" class="item-card__link">
+                    <img class="item-card__img" src="img/adp-index/item-1.jpg" alt="item">
+                    <h4 class="item-card__header">Ellery m'o capsule</h4>
+                    <p class="item-card__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="item-card__price">$52.00</p>
+                </a>
+                <a href="shopping-cart.html" class="item-card__button">Add to cart</a>
+            </div>
 
+            <div class="item-card item-card_margin">
+                    <a href="single-page.html" class="item-card__link">
+                        <img class="item-card__img" src="img/adp-index/item-2.jpg" alt="item">
+                        <h4 class="item-card__header">Ellery m'o capsule</h4>
+                        <p class="item-card__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="item-card__price">$52.00</p>
+                    </a>
+                    <a href="shopping-cart.html" class="item-card__button">Add to cart</a>
+                </div>
+
+            <div class="item-card">
+                    <a href="single-page.html" class="item-card__link">
+                        <img class="item-card__img" src="img/adp-index/item-3.jpg" alt="item">
+                        <h4 class="item-card__header">Ellery m'o capsule</h4>
+                        <p class="item-card__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="item-card__price">$52.00</p>
+                    </a>
+                    <a href="shopping-cart.html" class="item-card__button">Add to cart</a>
+                </div>
+
+            <div class="item-card">
+                <a href="single-page.html" class="item-card__link">
+                    <img class="item-card__img" src="img/adp-index/item-4.jpg" alt="item">
+                    <h4 class="item-card__header">Ellery m'o capsule</h4>
+                    <p class="item-card__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="item-card__price">$52.00</p>
+                </a>
+                <a href="shopping-cart.html" class="item-card__button">Add to cart</a>
+            </div>
+
+            <div class="item-card item-card_margin">
+                <a href="single-page.html" class="item-card__link">
+                    <img class="item-card__img" src="img/adp-index/item-5.jpg" alt="item">
+                    <h4 class="item-card__header">Ellery m'o capsule</h4>
+                    <p class="item-card__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="item-card__price">$52.00</p>
+                </a>
+                <a href="shopping-cart.html" class="item-card__button">Add to cart</a>
+            </div>
+
+            <div class="item-card">
+                <a href="single-page.html" class="item-card__link">
+                    <img class="item-card__img" src="img/adp-index/item-6.jpg" alt="item">
+                    <h4 class="item-card__header">Ellery m'o capsule</h4>
+                    <p class="item-card__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="item-card__price">$52.00</p>
+                </a>
+                <a href="shopping-cart.html" class="item-card__button">Add to cart</a>
+            </div>
+
+        </div>
+
+        <a href="product.html" class="button">Browse All product</a>
+    </div>
+        <div class="banner-bottom">
+            <div class="container flex-box banner-bottom__flex-box">
+            <div class="banner-card">
+                <img src="img/adp-index/icon-delivery.svg" alt="icon" class="banner-card__img">
+                <p class="banner-card__header">Free Delivery</p>
+                <p class="banner-card__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </div>
+
+            <div class="banner-card">
+                <img src="img/adp-index/icon-sales.svg" alt="icon" class="banner-card__img">
+                <p class="banner-card__header">Sales & discounts</p>
+                <p class="banner-card__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </div>
+
+            <div class="banner-card">
+                    <img src="img/adp-index/icon-quality.svg" alt="icon" class="banner-card__img">
+                    <p class="banner-card__header">Quality assurance</p>
+                    <p class="banner-card__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+        </div>
     </main>
-
   </div>
 
   <footer>
+    <div class="footer">
+        <div class="container flex-box footer__flex-box">
+            <figure class="review-card">
+                <img src="img/adp-index/avatar.png" alt="avatar" class="review-card__img">
+                <figcapton class="review-card__text"><q>Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum</q></figcapton>
+            </figure>
+
+            <form action="#!" class="subscribe-form">
+                <p class="subscribe-form__header">Subscribe</p>
+                <p class="subscribe-form__text">FOR OUR NEWLETTER AND PROMOTION</p>
+                <div class="input-email">
+                    <input type="email" class="input-email__email" placeholder=" Enter your Email">
+                    <input type="button" class="input-email__button" value="Subscribe">
+                </div>
+            </form>
+        </div>
+    </div>
+      <div class="footer-rights">
+          <div class="container flex-box footer-rights__flex-box">
+              <p class="footer-rights__text">&copy; 2021  Brand  All Rights Reserved.</p>
+              <div class="flex-box social">
+                  <a href="#!" class="social__button social__button_margin-right"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#!" class="social__button social__button_margin-right"><i class="fab fa-instagram"></i></a>
+                  <a href="#!" class="social__button social__button_margin-right"><i class="fab fa-pinterest-p"></i></a>
+                  <a href="#!" class="social__button"><i class="fab fa-twitter"></i></a>
+              </div>
 
 
+          </div>
+      </div>
   </footer>
 </div>
 

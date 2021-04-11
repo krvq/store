@@ -1,3 +1,17 @@
+$grey: #222
+$pink: #F16D7F
+$banner-color: #F1E4E6
+$sub-text-color: #9F9F9F
+$item-card-bgc: #F8F8F8
+$item-card-header-color: #000
+$item-card-text-color: #5d5d5d
+$item-card-button-color: #fff
+$button-color: #fff
+$banner-card-color: #FBFBFB
+$review-card-text: #222224
+$subscribe-form-bgc: #e1e1e1
+$container: 1140px
+
 *
   margin: 0
   padding: 0
@@ -14,8 +28,375 @@ body
     flex-grow: 1
 
 .container
-  max-width: 1140px
+  max-width: $container
   margin: 0 auto
 
-h1
-  color: red
+.block-full-page
+  &__top
+    padding: 18px 0
+    &_bgc
+      background-color: $grey
+
+  &__top-banner
+    &_bgc
+      background-color: $banner-color
+      padding-top: 20px
+
+
+.flex-box
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  &__offer
+    margin-top: 45px
+
+  &_card
+    margin-top: 45px
+    flex-wrap: wrap
+
+
+.img-link
+  text-decoration: none
+  display: block
+  &__top
+    margin-right: 40px
+
+.drop-down
+  position: relative
+
+  &__top
+    margin-right: 30px
+
+.drop-down-head
+  outline: none
+  cursor: pointer
+  list-style: none
+
+  &::-webkit-details-marker
+    display: none
+
+.drop-down-content
+  position: absolute
+
+.lettering
+  display: flex
+  align-items: center
+
+  &__top-banner::before
+    content: ""
+    width: 12px
+    height: 92px
+    background-color: $pink
+    margin-right: 13px
+
+.lettering-header
+  font-size: 60px
+  line-height: 44px
+  font-weight: 900
+  letter-spacing: 0.025em
+  text-transform: uppercase
+  color: $grey
+
+.lettering-text
+  font-weight: 600
+  font-size: 40px
+
+  &__top-banner
+    &::after
+      content: " fashion"
+      color: $pink
+
+.img-block
+  display: flex
+  &__top-banner
+    //max-width: 800px
+    //max-height: 764px
+
+
+.offer-card
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &__index
+    &_margin-center
+      padding: 0 15px
+
+  &__index_margin-bot
+    margin: 30px 0 90px 0
+
+.offer-card-img
+  filter: brightness(50%)
+  width: 100%
+  height: 100%
+
+.offer-card-text
+  position: absolute
+  font-size: 14px
+  line-height: 22px
+  font-weight: 300
+  text-align: center
+  color: #FFFFFF
+  text-transform: uppercase
+
+  &_effect
+    font-size: 18px
+    font-weight: 700
+    letter-spacing: 0.05em
+    color: $pink
+
+.header
+  font-size: 30px
+  line-height: 36px
+  text-align: center
+  font-weight: 400
+  color: $grey
+
+.sub-text
+  font-size: 14px
+  line-height: 17px
+  text-align: center
+  color: $sub-text-color
+
+.item-card
+  margin: 0 auto
+  max-width: 360px
+  background-color: $item-card-bgc
+  display: flex
+  flex-direction: column
+  position: relative
+  margin-bottom: 30px
+  transition: all .5s
+  &:hover
+    box-shadow: 0 2px 5px
+
+  &:hover &__img
+    filter: brightness(50%)
+
+  &:hover &__button
+    display: flex
+    opacity: 1
+
+  //&_margin
+  //  margin-right: 30px
+  //  margin-left: 30px
+
+  &__img
+    transition: all .5s
+
+  &__link
+    text-decoration: none
+  &__header
+    font-size: 13px
+    line-height: 16px
+    text-transform: uppercase
+    color: $item-card-header-color
+    padding: 25px 0 0 18px
+
+  &__text
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: $item-card-text-color
+    padding: 13px 30px 0 18px
+
+  &__price
+    font-size: 16px
+    line-height: 19px
+    color: $pink
+    padding: 18px 0 20px 18px
+
+  &__button
+    position: absolute
+    display: none
+    opacity: 0
+    align-items: center
+    justify-content: center
+    align-self: center
+    top: 30%
+    text-decoration: none
+    color: $item-card-button-color
+    border: 1px solid $item-card-button-color
+    padding: 10px 20px
+    transition: all .5s
+
+    &::before
+      content: "\f07a"
+      font-family: "Font Awesome 5 Free"
+      font-weight: 600
+      padding-right: 5px
+
+    &:hover
+      box-shadow: 0 0 10px
+      text-shadow: 0 0 1px
+      border: 1px solid $pink
+      color: $pink
+
+.button
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+  border: 1px solid $pink
+  color: $pink
+  background-color: $button-color
+  padding: 15px 0
+  width: 210px
+  text-decoration: none
+  font-size: 16px
+  line-height: 19px
+  transition: all .5s
+
+  &:hover
+    background-color: $pink
+    color: $button-color
+
+.banner-bottom
+  background-color: $grey
+  margin-top: 90px
+  padding: 100px 0
+
+  &__flex-box
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+
+.banner-card
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  max-width: 360px
+
+  &__header
+    color: $banner-card-color
+    font-size: 20px
+    line-height: 24px
+    text-align: center
+    padding: 25px 0 16px
+
+  &__text
+    color: $banner-card-color
+    font-size: 14px
+    line-height: 17px
+    font-weight: 300
+    text-align: center
+
+.footer
+  background: url(img/adp-index/footer-back-effect.png) center no-repeat, url(img/adp-index/footer-back.jpg) center no-repeat
+  background-size: cover
+  height: 450px
+
+  &__flex-box
+    flex-wrap: wrap
+    justify-content: space-around
+    height: 100%
+    width: 100%
+
+.review-card
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+
+  &__text
+    margin-top: 20px
+    max-width: 360px
+    text-align: center
+    font-size: 20px
+    line-height: 24px
+    font-style: italic
+    color: $review-card-text
+
+.subscribe-form
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+
+  &__header
+    text-align: center
+    text-transform: uppercase
+    font-size: 24px
+    line-height: 40px
+    letter-spacing: 0.025em
+    color: $review-card-text
+    font-weight: 700
+
+  &__text
+    text-align: center
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 24px
+    letter-spacing: 0.025em
+    color: $review-card-text
+    margin-bottom: 32px
+
+  .input-email
+    position: relative
+    display: flex
+    align-items: center
+
+    &__email
+      outline: none
+      background-color: $subscribe-form-bgc
+      border: none
+      border-radius: 25px
+      padding-left: 22px
+      width: 356px-22px
+      height: 50px
+      font-size: 14px
+      line-height: 17px
+      opacity: 0.67
+
+    &__button
+      outline: none
+      border: none
+      cursor: pointer
+      display: flex
+      align-items: center
+      position: absolute
+      top: 0
+      right: 0
+      width: 100px
+      height: 50px
+      background-color: $pink
+      border-radius: 0 25px 25px 0
+      font-size: 14px
+      line-height: 17px
+      text-align: center
+      color: $button-color
+
+.footer-rights
+  background-color: $grey
+
+  &__flex-box
+    height: 80px
+    align-items: center
+
+  &__text
+    font-size: 16px
+    line-height: 19px
+    color: $banner-card-color
+
+.social
+  &__button
+    text-decoration: none
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 32px
+    height: 32px
+    background-color: #fff
+    color: #000
+    transition: background .5s
+
+    &:hover
+      background-color: $pink
+      color: #fff
+
+    &_margin-right
+      margin-right: 7px
