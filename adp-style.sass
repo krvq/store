@@ -68,6 +68,71 @@ body
   &__top
     margin-right: 30px
 
+  &__content
+    position: absolute
+    top: 50px
+    right: 0
+
+.menu-content
+  background-color: #fff
+  width: 232px
+  height: 770px
+
+  &__icon-exit
+    display: block
+    text-align: right
+    margin: 16px 16px 0 0
+    text-decoration: none
+    color: #6f6e6e
+    cursor: pointer
+    transition: all .5s
+    & i
+      transition: all 2s
+
+    &:hover
+      color: $pink
+    &:hover i
+      transform: rotate(180deg)
+
+  &__header
+    display: block
+    font-size: 14px
+    line-height: 17px
+    color: #000
+    text-transform: uppercase
+    font-weight: 700
+    margin: 8px 0 14px 34px
+
+  &__list
+    margin-top: 10px
+    padding-left: 54px
+
+.list
+  list-style-type: none
+
+  &__header
+    display: block
+    cursor: pointer
+    text-decoration: none
+    color: $pink
+    text-transform: uppercase
+    letter-spacing: 0.025em
+    font-size: 14px
+    line-height: 17px
+    margin: 20px 0 12px 34px
+
+  &__item
+    display: block
+    text-decoration: none
+    margin-bottom: 10px
+    font-size: 14px
+    line-height: 17px
+    color: #6f6e6e
+    transition: all .5s
+    &:hover
+      color: $pink
+
+
 .drop-down-head
   outline: none
   cursor: pointer
@@ -75,9 +140,6 @@ body
 
   &::-webkit-details-marker
     display: none
-
-.drop-down-content
-  position: absolute
 
 .lettering
   display: flex
